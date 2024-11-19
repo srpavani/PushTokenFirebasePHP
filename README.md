@@ -1,55 +1,31 @@
-# FIREBASE-WEB-PUSH-NOTIFICATION
-A simple web application that demonstrates Firebase Cloud Messaging (FCM) for sending push notifications to web browsers.
+# Firebase Push Notification Manager
 
-## Features
+![GitHub repo size](https://img.shields.io/github/repo-size/srpavani/PushTokenFirebasePHP?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/srpavani/PushTokenFirebasePHP?style=for-the-badge)
 
-- **Firebase Integration:** Utilizes Firebase Cloud Messaging for sending push notifications.
-- **Push Notification Subscription:** Allows users to subscribe to push notifications.
-- **Real-time Messaging:** Receive notifications in real-time when the app is not in focus.
 
-## Getting Started
+> This project enables seamless push notification management using Firebase Cloud Messaging (FCM), built entirely without third-party libraries or frameworks. It focuses on simplicity and efficiency for developers who need a lightweight, self-contained solution for sending and receiving notifications across platforms.
 
-### Prerequisites
+## How It Works
 
-1. **Firebase Account:**
-   - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/).
-   - Obtain your Firebase project credentials.
+1 **User Subscription: Users can subscribe to receive notifications by granting permission directly in the browser.
+2 **FCM Token Management: The system handles token generation, validation, and storage without external dependencies.
+3 **Notification Delivery: Notifications are sent via Firebase Cloud Messaging and displayed using the browser's native notification API, ensuring compatibility and performance.
+4 **Service Worker Integration: The project uses a Service Worker to manage notifications in the background.
 
-2. **Web Browser:**
-   - Ensure that the web browser supports push notifications (most modern browsers do).
+### Improvements and Future Enhancements
+The project is under active development, and future updates will focus on:
 
-### Installation
+- [x] Notification Delivery: HTML 
+- [x] Notification Delivery: Android.
+- [x] Notification Delivery: IOS Notification.
+- [x] Sending JWT to Firebase API  without third-party libraries or frameworks.
+  
 
-1. Clone the repository.
+## 💻 Requirements
+Before getting started, ensure you meet the following prerequisites: 
 
-   ```bash
-   git clone https://github.com/aishwarya-art/FIREBASE-WEB-PUSH-NOTIFICATION.git
+- `<PHP 7.0>`
+- `<Windows / Linux / Mac>`. 
 
-2. Navigate to the project directory
-   cd FIREBASE-WEB-PUSH-NOTIFICATION
 
-3. Add your Firebase project credentials.
-
-const firebaseConfig = {
-  apiKey: 'YOUR_API_KEY',
-  authDomain: 'YOUR_AUTH_DOMAIN',
-  projectId: 'YOUR_PROJECT_ID',
-  storageBucket: 'YOUR_STORAGE_BUCKET',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
-  appId: 'YOUR_APP_ID',
-};
-
-export default firebaseConfig;
-
-## Generate Token 
-
-![Generate-token](https://github.com/aishwarya-art/FIREBASE-WEB-PUSH-NOTIFICATION/assets/113532088/864761cc-829f-4370-9e31-e942ab7c786e)
-
-## Add token to get notification
-![Push-notification](https://github.com/aishwarya-art/FIREBASE-WEB-PUSH-NOTIFICATION/assets/113532088/4b2d61d2-3a53-4ee8-93ea-0761ffab7e4b)
-
-## Contributing
-Feel free to contribute to the project by opening issues or pull requests.
-
-## Created by 
-Aishwarya MS
